@@ -1,0 +1,15 @@
+/* Doug Bradley */
+/* DGMDE-20 */
+/* Assignement 1 - Due 9/23/2016 */
+
+/* part 1, #1 - set all elements to sans-serif, dark gray */
+* {
+  font-family: sans-serif;
+  color: DarkGray;
+}
+
+/* part 1, #1 continued - set all headings to a shade of blue and mono font */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Courier New",  monospace;
+  color: MediumBlue
+}
