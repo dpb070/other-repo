@@ -26,7 +26,15 @@ nav a::after {
   content: "**********";
 }
 
-/* part 1, #5 - */
+/* part 1, #5 - provide space around table cell contents, pink box around table */
+th,td {
+  padding: 5px;
+}
+table {
+  border-style: double;
+  border-width: thick;
+  border-color: pink;
+}
 
 /* part 1, #6 - non-month headings green, italic, left-aligned */
 th:first-child {
@@ -35,10 +43,30 @@ th:first-child {
   font-style: italic;
 }
 
-/* part 1, #7 - */
+/* part 1, #7 - stripe table rows with alternating colors*/
+tr:nth-child(even) {
+  background-color: lightGray
+}
+tr:nth-child(odd) {
+  background-color: lightBlue
+}
 
-/* part 1, #8 - */
+/* part 1, #8 - purple background and white text for specified part of line 92*/
+p:nth-of-type(6) em {
+    color: white;
+    background-color: purple;
+}
 
-/* part 1, #9 - */
+/* part 1, #9 - "another student": line 32 brown, bold, not italic */
+blockquote:first-of-type + blockquote cite {
+  color: brown;
+  font-weight: bold;
+  font-style: normal;
+}
 
-/* part 1, #10 - */
+/* part 1, #10 - orange line separating footer, centered */
+footer p {
+  border-top-style: solid;
+  border-top-color: orange;
+  border-top-width: medium;
+}
