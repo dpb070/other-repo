@@ -1,0 +1,50 @@
+# Doug Bradley
+# DGMDE-20
+# Assignement 1 - Due 9/23/2016
+# Part 2, CSS to HTML
+
+ #1 CSS = .gridcell[id=”danger”]
+
+ <table>
+   <tr> <td class="gridcell" id="danger">One</td> </tr>
+ </table>
+---------------------------------
+ #2 CSS = .warning strong:not(.dead)
+
+ <div class="warning">
+   <strong class="alive"> some text here for #2 </strong>
+ </div>
+---------------------------------
+ #3 CSS = body#wrapper > a:first-child:hover
+
+
+---------------------------------
+ #4 CSS = .bb8.r2d2 #c3po
+
+ <div class="bb8 r2d2">
+   <div id="c3po"> #4
+   </div>
+ </div>
+---------------------------------
+ #5 CSS = .captain.picard * #riker
+
+ <div class="captain picard">
+   <div>
+     <p id="riker"> #5 </p>
+   </div>
+ </div>
+---------------------------------
+ #6 CSS = blockquote[title]:first-line
+ <blockquote title="some value for title">
+   <p>Line1</p>
+ </blockquote>
+
+---------------------------------
+ #7 CSS =
+---------------------------------
+ #8 CSS =
+---------------------------------
+ #9 CSS =
+---------------------------------
+ #10 CSS =
+---------------------------------
