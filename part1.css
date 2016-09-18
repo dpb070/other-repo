@@ -25,3 +25,20 @@ a[href^="http"]::after {
 nav a::after {
   content: "**********";
 }
+
+/* part 1, #5 - */
+
+/* part 1, #6 - non-month headings green, italic, left-aligned */
+th:first-child {
+  color: green;
+  text-align: left;
+  font-style: italic;
+}
+
+/* part 1, #7 - */
+
+/* part 1, #8 - */
+
+/* part 1, #9 - */
+
+/* part 1, #10 - */
