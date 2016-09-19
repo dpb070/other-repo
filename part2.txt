@@ -6,23 +6,26 @@
  #1 CSS = .gridcell[id=”danger”]
 
  <table>
-   <tr> <td class="gridcell" id="danger">One</td> </tr>
+   <tr> <td class="gridcell" id="danger">Selected!</td> </tr>
+   <tr> <td class="gridcell" id="OK">Not Selected</td> </tr>
  </table>
 ---------------------------------
  #2 CSS = .warning strong:not(.dead)
 
  <div class="warning">
-   <strong class="alive"> some text here for #2 </strong>
+   <strong class="alive">Selected! </strong>
  </div>
 ---------------------------------
  #3 CSS = body#wrapper > a:first-child:hover
 
-
+ <body id="wrapper">
+ <a href="local.html">Link selected!</a>
+ </body>
 ---------------------------------
  #4 CSS = .bb8.r2d2 #c3po
 
  <div class="bb8 r2d2">
-   <div id="c3po"> #4
+   <div id="c3po"> Selected!
    </div>
  </div>
 ---------------------------------
@@ -30,21 +33,49 @@
 
  <div class="captain picard">
    <div>
-     <p id="riker"> #5 </p>
+     <p id="riker"> Selected! </p>
    </div>
  </div>
 ---------------------------------
  #6 CSS = blockquote[title]:first-line
+
  <blockquote title="some value for title">
-   <p>Line1</p>
+   <p>Selected!</p>
+   <p>Not Selected</p>
  </blockquote>
+---------------------------------
+ #7 CSS = article p:nth-of-type(even)
+
+ <article>
+   <a href="local.html">First link - not selected</a>
+   <a href="local2.html">Second link - not selected</a>
+   <p>para 1</p>
+   <p>para 2 - Selected!</p>
+   <p>para 3</p>
+   <p>para 4 - Selected!</p>
+ </article>
+---------------------------------
+ #8 CSS = .verylong#list
+
+ <p>Not Selected!</p>
+ <p class="verylong">Not Selected!</p>
+ <p class="verylong", id="list">Selected!</p>
+---------------------------------
+ #9 CSS = .verylong #list
+
+ <div class="verylong">
+   <div id="list">
+     Selected!
+   </div>
+ </div>
 
 ---------------------------------
- #7 CSS =
----------------------------------
- #8 CSS =
----------------------------------
- #9 CSS =
----------------------------------
- #10 CSS =
+ #10 CSS = ul > li + li > a *
+
+ <ul>
+   <li><a href="local.html"><strong>Link not selected</strong></a></li>
+   <li><a href="local.html">Link not selected</a></li>
+   <li><a href="local.html"><strong>Link Selected!</strong></a></li>
+ </ul>
+
 ---------------------------------
