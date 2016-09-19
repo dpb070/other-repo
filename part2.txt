@@ -19,7 +19,7 @@
  #3 CSS = body#wrapper > a:first-child:hover
 
  <body id="wrapper">
- <a href="local.html">Link selected!</a>
+ <a href="local.html">Link selected (on hover)!</a>
  </body>
 ---------------------------------
  #4 CSS = .bb8.r2d2 #c3po
